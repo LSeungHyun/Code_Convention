@@ -20,7 +20,7 @@
 
 ---
 
-## 1. Types
+## 1. 타입 (Types)
 
   <a name="1-types"></a>
   - **기본형(Primitive Types)**: Unity C#의 기본형에는 `int`, `float`, `double`, `bool`, `string`, `char` 등이 있으며, 이러한 타입들은 값이 직접적으로 조작됩니다.
@@ -45,7 +45,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 2. References
+## 2. 참조 (References)
 
   <a name="2-references"></a>
   - **Inspector 사용 권장**: Inspector 창에 직접 캐싱할 수 있다면 스크립트를 통한 참조는 지양합니다.
@@ -64,7 +64,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 3. Objects
+## 3. 오브젝트 (Objects)
 
   <a name="3-objects"></a>
   - **객체 생성**: 객체는 `new` 키워드를 사용하여 명시적으로 생성합니다.
@@ -90,7 +90,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 4. Arrays
+## 4. 배열 (Arrays)
 
   <a name="4-arrays"></a>
   - **배열 리터럴 사용**: 배열 생성 시 리터럴 구문을 사용하여 가독성을 높입니다.
@@ -114,7 +114,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 5. Functions
+## 5. 함수 (Functions)
 
   <a name="5-functions"></a>
   - **명시적 함수 선언**: 함수는 명시적으로 선언하여 디버깅에 유리하게 작성합니다.
@@ -146,7 +146,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 6. Classes & Constructors
+## 6. 클래스 및 생성자 (Classes & Constructors)
 
   <a name="6-classes--constructors"></a>
   - **클래스 사용**: 명시적으로 클래스를 사용하여 코드를 구조화합니다.
@@ -174,7 +174,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 7. Conditionals & Comparisons
+## 7. 조건식 및 비교 (Conditionals & Comparisons)
 
   <a name="7-conditionals--comparisons"></a>
   - **Equals 사용**: 객체 비교 시 `==` 연산자 대신 `Equals` 메서드를 사용합니다.
@@ -197,7 +197,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 8. Whitespace & Indentation
+## 8. 공백 및 들여쓰기 (Whitespace & Indentation)
 
   <a name="8-whitespace--indentation"></a>
   - **두 칸 들여쓰기 사용**: 들여쓰기는 두 칸을 사용하여 가독성을 유지합니다.
@@ -213,7 +213,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 9. Naming Conventions
+## 9. 명명 규칙 (Naming Conventions)
 
   <a name="9-naming-conventions"></a>
   - **camelCase 및 PascalCase 사용**: 변수는 `camelCase`를, 함수나 클래스 이름은 `PascalCase`를 사용합니다.
@@ -226,7 +226,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 10. Comments
+## 10. 주석 (Comments)
 
   <a name="10-comments"></a>
   - **단일행 주석**: 단일 행 주석은 `//`로 작성하며, 설명이 필요한 경우 주석을 코드 상단에 배치합니다.
@@ -239,7 +239,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 11. Conditionals & Blocks
+## 11. 조건문 및 블록 (Conditionals & Blocks)
 
   <a name="11-conditionals--blocks"></a>
   - **중괄호 사용**: 모든 조건문 및 반복문의 블록에는 중괄호 `{}`를 사용하여 명확한 코드 흐름을 유지합니다.
@@ -253,7 +253,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 12. File Structure
+## 12. 파일 구조 (File Structure)
 
   <a name="12-file-structure"></a>
   - **파일당 하나의 클래스**: 각 파일은 하나의 클래스만 포함하며, 파일 이름은 클래스 이름과 동일하게 설정합니다.
@@ -278,7 +278,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 13. Object Creation and Management
+## 13. 오브젝트 생성 및 관리 (Object Creation and Management)
 
   <a name="13-object-creation-and-management"></a>
   - **빈 오브젝트 생성 후 위치 Reset**: 모든 빈 오브젝트는 생성 후 위치를 Reset합니다.
@@ -298,7 +298,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 14. Variable Declaration and Assignment
+## 14. 변수 선언 및 할당 (Variable Declaration and Assignment)
 
   <a name="14-variable-declaration-and-assignment"></a>
   - **변수 선언 순서**: 클래스 내부의 맨 위부터 선언합니다.
