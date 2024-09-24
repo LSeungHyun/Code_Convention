@@ -2,20 +2,21 @@
 
 ## Table of Contents
 
-  1. [Types](#1-types)
-  1. [References](#2-references)
-  1. [Objects](#3-objects)
-  1. [Arrays](#4-arrays)
-  1. [Functions](#5-functions)
-  1. [Classes & Constructors](#6-classes--constructors)
-  1. [Conditionals & Comparisons](#7-conditionals--comparisons)
-  1. [Whitespace & Indentation](#8-whitespace--indentation)
-  1. [Naming Conventions](#9-naming-conventions)
-  1. [Comments](#10-comments)
-  1. [Conditionals & Blocks](#11-conditionals--blocks)
-  1. [File Structure](#12-file-structure)
-  1. [Object Creation and Management](#13-object-creation-and-management)
-  1. [Variable Declaration and Assignment](#14-variable-declaration-and-assignment)
+  1. [타입 (Types)](#1-types)
+  1. [참조 (References)](#2-references)
+  1. [오브젝트 (Objects)](#3-objects)
+  1. [배열 (Arrays)](#4-arrays)
+  1. [함수 (Functions)](#5-functions)
+  1. [클래스 및 생성자 (Classes & Constructors)](#6-classes--constructors)
+  1. [조건식 및 비교 (Conditionals & Comparisons)](#7-conditionals--comparisons)
+  1. [공백 및 들여쓰기 (Whitespace & Indentation)](#8-whitespace--indentation)
+  1. [명명 규칙 (Naming Conventions)](#9-naming-conventions)
+  1. [주석 (Comments)](#10-comments)
+  1. [조건문 및 블록 (Conditionals & Blocks)](#11-conditionals--blocks)
+  1. [파일 구조 (File Structure)](#12-file-structure)
+  1. [오브젝트 생성 및 관리 (Object Creation and Management)](#13-object-creation-and-management)
+  1. [변수 선언 및 할당 (Variable Declaration and Assignment)](#14-variable-declaration-and-assignment)
+
 
 ---
 
