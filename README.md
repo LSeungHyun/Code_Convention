@@ -22,7 +22,7 @@
 ## 1. Types
 
   <a name="types--value"></a><a name="1.1"></a>
-  - [1.1](#types--value) **기본형(Primitive Types)**: Unity C#의 기본형은 `int`, `float`, `double`, `bool`, `string`, `char` 등이 있으며, 이러한 타입들은 값이 직접적으로 조작됩니다.
+  - [1.1](#types--value) **기본형(Primitive Types)**: Unity C#의 기본형에는 `int`, `float`, `double`, `bool`, `string`, `char` 등이 있으며, 이러한 타입들은 값이 직접적으로 조작됩니다.
 
     ```csharp
     int a = 10;
@@ -55,7 +55,7 @@
   - [2.2](#references--find-getcomponent) **Find 및 GetComponent 사용**: `Find` 및 `GetComponent` 메서드 참조는 `Awake`에서 호출하며, `null` 값 확인을 통해 메모리 낭비를 방지합니다.
 
   <a name="references--const-readonly"></a><a name="2.3"></a>
-  - [2.3](#references--const-readonly) **상수 및 readonly 사용**: 재할당을 방지하기 위해 `const` 또는 `readonly`를 사용하며 `var`는 지양합니다.
+  - [2.3](#references--const-readonly) **상수 및 readonly 사용**: 재할당을 방지하려면 `const` 또는 `readonly`를 사용하며 `var`는 지양합니다.
 
     ```csharp
     const int MAX_VALUE = 100;
@@ -253,6 +253,19 @@
     playerHealth += 10;
     ```
 
+  <a name="comments--multi-line"></a><a name="10.2"></a>
+  - [10.2](#comments--multi-line) **다중 행 주석 (/** */)**: 여러 줄의 설명이 필요한 경우에는 다중 행 주석을 사용합니다.
+
+    ```csharp
+    /*
+     * 플레이어의 체력을 회복시키는 함수입니다.
+     * @param amount 회복할 체력 양
+     */
+    void HealPlayer(int amount) {
+      playerHealth += amount;
+    }
+    ```
+
 ---
 
 **[⬆ back to top](#table-of-contents)**
@@ -268,6 +281,19 @@
     }
     ```
 
+  <a name="conditionals--single-line-braces"></a><a name="11.2"></a>
+  - [11.2](#conditionals--single-line-braces) **한 줄의 조건문도 중괄호 사용**: 조건문의 본문이 한 줄일 때에도 중괄호를 사용하여 일관성을 유지 및 가독성 향상
+
+    ```csharp
+    // Bad
+    if (isAlive) doSomething();
+
+    // Good
+    if (isAlive) {
+      doSomething();
+    }
+    ```
+
 ---
 
 **[⬆ back to top](#table-of-contents)**
@@ -277,20 +303,60 @@
   <a name="file-structure--one-class-per-file"></a><a name="12.1"></a>
   - [12.1](#file-structure--one-class-per-file) **파일당 하나의 클래스**: 각 파일은 하나의 클래스만 포함하며, 파일 이름은 클래스 이름과 동일하게 설정합니다.
 
+    ```csharp
+    // Player.cs
+    public class Player {
+      // 클래스 구현
+    }
+    ```
+
+  <a name="file-structure--namespace"></a><a name="12.2"></a>
+  - [12.2](#file-structure--namespace) **네임스페이스 사용**: 클래스의 논리적 그룹화를 위해 네임스페이스를 사용합니다.
+
+    ```csharp
+    namespace GameNamespace {
+      public class Player {
+        // 클래스 구현
+      }
+    }
+    ```
+
 ---
 
 **[⬆ back to top](#table-of-contents)**
 
 ## 13. Object Creation and Management
 
-  <a name="objects--empty-object"></a><a name="13.1"></a>
-  - [13.1](#objects--empty-object) **빈 오브젝트 관리**: 모든 빈 오브젝트는 생성 후 위치를 Reset하고 PascalCase를 사용합니다.
+  <a name="objects--reset-position"></a><a name="13.1"></a>
+  - [13.1](#objects--reset-position) **빈 오브젝트 생성 후 위치 Reset**: 모든 빈 오브젝트는 생성 후 위치를 Reset합니다.
+
+  <a name="objects--naming"></a><a name="13.2"></a>
+  - [13.2](#objects--naming) **오브젝트 이름 영어 사용**: 모든 빈 오브젝트의 이름은 영어를 지향하고 한글을 지양합니다.
+
+  <a name="objects--naming-case"></a><a name="13.3"></a>
+  - [13.3](#objects--naming-case) **PascalCase 사용**: 모든 빈 오브젝트의 이름은 PascalCase를 사용하고 사용 의미에 알맞은 이름을 부여합니다.
+
+    ```csharp
+    // Bad
+    move
+
+    // Good
+    MovePoint
+    ```
 
 ---
 
+**[⬆ back to top](#table-of-contents)**
+
 ## 14. Variable Declaration and Assignment
 
-  <a name="variables--declaration"></a><a name="14.1"></a>
-  - [14.1](#variables--declaration) **클래스 내부 변수 정렬**: 클래스 내부의 맨 위부터 선언하며, Inspector에서 직접 캐싱해주는 변수와 그렇지 않은 변수로 분류합니다.
+  <a name="variables--declaration-order"></a><a name="14.1"></a>
+  - [14.1](#variables--declaration-order) **변수 선언 순서**: 클래스 내부의 맨 위부터 선언합니다.
+
+  <a name="variables--inspector"></a><a name="14.2"></a>
+  - [14.2](#variables--inspector) **Inspector에서 캐싱 여부에 따라 분류**: Inspector에서 직접 캐싱해주는 변수와 그렇지 않은 변수로 분류합니다.
+
+  <a name="variables--type-order"></a><a name="14.3"></a>
+  - [14.3](#variables--type-order) **타입별 선언 순서**: GameObject, string, int, bool 타입 순서로 선언합니다.
 
 **[⬆ back to top](#table-of-contents)**
