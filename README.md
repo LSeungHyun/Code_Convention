@@ -5,7 +5,7 @@
   1. [타입 (Types)](#1-types)
   1. [참조 (References)](#2-references)
   1. [오브젝트 (Objects)](#3-objects)
-  1. [배열 (Arrays)](#4-arrays)
+  1. [컬렉션 (Collection)](#4-collection)
   1. [함수 (Functions)](#5-functions)
   1. [클래스 및 생성자 (Classes & Constructors)](#6-classes--constructors)
   1. [조건식 및 비교 (Conditionals & Comparisons)](#7-conditionals--comparisons)
@@ -90,9 +90,9 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 4. 배열 (Arrays)
+## 4. 컬렉션 (Collection) [리스트, 큐, 스택, 해시테이블, 딕셔너리, 어레이리스트]
 
-  <a name="4-arrays"></a>
+  <a name="4-collection"></a>
   - **배열 리터럴 사용**: 배열 생성 시 리터럴 구문을 사용하여 가독성을 높입니다.
 
     ```csharp
