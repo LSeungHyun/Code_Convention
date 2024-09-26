@@ -163,11 +163,11 @@
     }
     ```
 
-  - **상속 구현**: `extends` 대신 `:`를 사용하여 상속을 구현합니다.
+  - **상속 구현**:  `:`를 사용하여 상속을 구현합니다.
 
     ```csharp
     class Enemy : Player {
-        public Enemy(string name, int health) : base(name, health) { }
+        public Enemy(string name, int health){ }
     }
     ```
 
@@ -200,12 +200,12 @@
 ## 8. 공백 및 들여쓰기 (Whitespace & Indentation)
 
   <a name="8-whitespace--indentation"></a>
-  - **두 칸 들여쓰기 사용**: 들여쓰기는 두 칸을 사용하여 가독성을 유지합니다.
+  - **Tab 들여쓰기 사용**: 들여쓰기는 Tab을 사용하여 가독성을 유지합니다.
 
     ```csharp
     void MyFunction() {
       if (true) {
-        // 두 칸 들여쓰기
+          // Tab들여쓰기
       }
     }
     ```
