@@ -315,17 +315,20 @@
 
   <a name="15-basic-art-resource-setting"></a>
   - **아트 리소스 사이즈**: 가로,세로 사이즈는 짝수 최소값으로 설정합니다.
-
-  - *Import Setting*
-  <br><br>
-  - **Max Size**: 아트 리소스의 가로,세로 길이보다 작아지지 않는 선에서 최소값으로 설정합니다. 
- 
-  - **Build 및 압축 형식**: ASTC방식 선택 (DXT방식은 선택 x - 손실이 발생하는 압축 형식), 4x4를 선택하여 품질을 최상으로 선택합니다. (12x12는 품질최하, 압축률 최고)
-  - Defalut의 compression 기능(Mitchell, Automatic, NormalQuality, Use Crunch)을 사용하면 이미지가 깨짐(Max size 상관없이)
-
+    
   - **Pixels per unit**: 모든 아트 리소스의 pixels per unit값은 1로 통일합니다.
 
   - **Pivot**: 모든 아트 리소스의 pivot값은 center로 통일합니다.
+    
+- **Import Setting**: 다음 설정은 모든 아트 리소스의 Import Setting에 적용됩니다.
+  
+  - **Max Size**: 아트 리소스의 가로, 세로 길이보다 작아지지 않는 선에서 최소값으로 설정합니다.
+    
+  - **Build 및 압축 형식**: ASTC방식 선택 (DXT방식은 선택 x - 손실이 발생하는 압축 형식), 4x4를 선택하여 품질을 최상으로 선택합니다. (12x12는 품질최하, 압축률 최고)
+    
+  - Defalut의 compression 기능(Mitchell, Automatic, NormalQuality, Use Crunch)을 사용하면 이미지가 깨짐(Max size 상관없이)
+    
+
     
 **[⬆ back to top](#table-of-contents)**
 
