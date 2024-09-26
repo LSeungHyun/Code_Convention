@@ -314,7 +314,9 @@
 ## 15. 아트 리소스 기본 설정 (Basic Art Resource Setting)
 
   <a name="15-basic-art-resource-setting"></a>
-  - **아트 리소스 사이즈**: 가로,세로 사이즈는 짝수 최소값으로 설정합니다.
+  - **Image Resource Size**: 가로,세로 사이즈는 짝수 최소값으로 설정합니다.
+    
+  - **확장자**: .png로 설정합니다.
     
   - **Pixels per unit**: 모든 아트 리소스의 pixels per unit값은 1로 통일합니다.
 
