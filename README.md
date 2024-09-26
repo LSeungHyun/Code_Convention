@@ -91,7 +91,7 @@
 ---
 **[⬆ back to top](#table-of-contents)**
 
-## 4. 컬렉션 (Collection) [리스트, 큐, 스택, 해시테이블, 딕셔너리, 어레이리스트]
+## 4. 컬렉션 (Collection) [어레이리스트, 리스트, 큐, 스택, 해시테이블, 해시셋, 딕셔너리]
 
   <a name="4-collection"></a>
   - **배열 리터럴 사용**: 배열 생성 시 리터럴 구문을 사용하여 가독성을 높입니다.
@@ -112,7 +112,7 @@
     numbers.Add(2);
     ```
 
-  - **타입 명시가 가능한 경우**: 직접적인 타입을 명시할 수 있다면 ArrayList 대신 List<T>를 사용합니다.
+  - **타입 명시가 가능한 경우**: 직접적인 타입을 명시할 수 있다면 ArrayList 대신 List<T>를, Hashtable 대신 Dictionary<T>를 사용합니다.
 ---
 **[⬆ back to top](#table-of-contents)**
 
