@@ -112,6 +112,7 @@
     numbers.Add(2);
     ```
 
+  - **타입 명시가 가능한 경우**: 직접적인 타입을 명시할 수 있다면 ArrayList 대신 List<T>를 사용합니다.
 ---
 **[⬆ back to top](#table-of-contents)**
 
