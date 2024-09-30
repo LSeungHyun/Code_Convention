@@ -318,6 +318,8 @@
   - **Image Resource Size**: 가로,세로 사이즈는 짝수 최소값으로 설정합니다.
     
   - **확장자**: .png로 설정합니다.
+
+  - **맵의 위치**: 각 씬의 알맞은 이미지를 넣은 뒤에 Transform의 값을 Reset하여 (0,0,0) 으로설정합니다.
     
   - **Pixels per unit**: 모든 아트 리소스의 pixels per unit값은 1로 통일합니다.
 
