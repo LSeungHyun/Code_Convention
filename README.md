@@ -17,6 +17,7 @@
   1. [오브젝트 생성 및 관리 (Object Creation and Management)](#13-object-creation-and-management)
   1. [변수 선언 및 할당 (Variable Declaration and Assignment)](#14-variable-declaration-and-assignment)
   1. [아트 리소스 기본 설정 (Basic Art Resource Setting)](#15-basic-art-resource-setting)
+  1. [WebGL 빌드 기본 설정 (WebGL Build Basic Setting)](#16-webgl-build-basic-setting)
 
 
 ---
@@ -337,4 +338,25 @@
     
 **[⬆ back to top](#table-of-contents)**
 
+## 16. WebGL 빌드 기본 설정 (WebGL Build Basic Settings)
 
+  <a name="16-webgl-build-basic-setting"></a>
+- *Other Setting - Additional Compiler Arguments*
+  - **Strip Engine Code**:  [v] / 사용하지 않는 코드 반영 안하는 기능
+    
+  - **Managed Stripping Level**: Minimal 로 설정
+ 
+- *Publishing Setting*
+  - **Compression Format**: Disabled 로 설정
+    
+  - **Data Caching**: [x]
+    
+  - **Decompression Fallback**: [x]
+    
+  - **Initial Memory Size**: 32 / 너무 큰 초기 값은 모바일 구동 X
+    
+  - **Memory Growth Mode**: Geometric 로 설정
+    
+  - **Maximum Memory Size**: 1024 ~ 2048 / 너무 크게 잡으면 모바일 부담
+
+**[⬆ back to top](#table-of-contents)**
