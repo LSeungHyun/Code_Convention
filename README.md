@@ -1,4 +1,4 @@
-# LedaGames Unity C# Script Style Guide
+# Unity C# Script Style Guide
 
 ## Table of Contents
 
