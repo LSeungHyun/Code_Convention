@@ -88,7 +88,13 @@
     // Good
     var type = "Test";
     ```
+  - **프리팹**: 반복 사용되는 오브젝트 프리팹화 합니다.
 
+  - **위치값 초기화**: Prefabs의 Inspector에서 Transform 컴포넌트 값을 초기화합니다.
+
+  - **기본 세팅**: 반복되는 오브젝트의 기초 틀 (사용되는 모든 기능)을 미리 세팅 한 후, 독립적인 변경이 필요한 경우 변경 후 Unpack합니다.
+    
+    
 ---
 **[⬆ back to top](#table-of-contents)**
 
