@@ -231,7 +231,33 @@
     int playerHealth;   // camelCase
     class PlayerCharacter {}   // PascalCase
     ```
+    
+   - **변수**: 지역변수,멤버변수,전역변수의 명칭적 구분이 필요합니다. 지역변수는 'l_', 멤버변수는 'm_', 전역변수는 모두 대문자 or 'g_'     
+  ```csharp
+    int l_score = 100; // 지역변수
 
+    private int _health;     // _를 붙이는 방식
+    private int m_score;    // m_을 붙이는 방식
+
+    public void SetHealth(int health)
+    {
+        _health = health; // 멤버변수와 구분 용이
+    }
+
+    public const int MAX_PLAYERS = 4;   // 일반적인 전역 상수 표기법
+    public static int g_score = 0;     // 접두사 g_로 구분
+  ```
+
+  - **파일과 폴더명**: 한글과 공백 사용 금지. Assets 폴더 아래에는 작업용 폴더를 따로 생성하여 관리하며, 외부에서 설치한 폴더는 수정하지 않고 그대로 유지해야 합니다.
+  ```csharp
+  Assets/
+    MyProject/            // 작업용 폴더
+        Scripts/
+        Prefabs/
+    ExternalAssets/       // 외부에서 설치된 폴더
+  ```
+
+  - 
 ---
 **[⬆ back to top](#table-of-contents)**
 
