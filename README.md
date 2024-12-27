@@ -232,19 +232,17 @@
     class PlayerCharacter {}   // PascalCase
     ```
     
-   - **변수**: 지역변수,멤버변수,전역변수의 명칭적 구분이 필요합니다. 지역변수는 'l_', 멤버변수는 'm_', 전역변수는 모두 대문자 or 'g_'     
+   - **변수**: 지역변수,멤버변수,전역변수의 명칭적 구분이 필요합니다. 지역변수는 'l_', 멤버변수는 'm_', 전역변수는 'g_'     
   ```csharp
     int l_score = 100; // 지역변수
 
-    private int _health;     // _를 붙이는 방식
     private int m_score;    // m_을 붙이는 방식
 
-    public void SetHealth(int health)
+    public void SetHealth(int score)
     {
-        _health = health; // 멤버변수와 구분 용이
+        m_score = score; // 멤버변수와 구분 용이
     }
 
-    public const int MAX_PLAYERS = 4;   // 일반적인 전역 상수 표기법
     public static int g_score = 0;     // 접두사 g_로 구분
   ```
 
